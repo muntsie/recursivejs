@@ -1,0 +1,52 @@
+// == factorial (iterative) ==
+function factorial(n) 
+  {
+      var f = 1;
+      var i;
+      for(i = 1; i <= n; i++) 
+     {
+         console.log("f is " + f);
+         console.log("i is " + i);
+         f *= i; // f = f*i
+         console.log("f times i equals " + f);
+     }
+      return f;
+  }
+console.log("The factorial of 4 is " + factorial(4));
+
+/* f=1, i=1 f=1*1=1 i=2, f=1
+1st time through...
+i is 1, which is < 4
+print it out, 1
+then increment it, making it 1
+
+f=1, i=2, f=1*2=2, i=3, f=2
+2nd time through, 1 is < 4
+print it out, 1
+then increment it, making it 2
+
+f=2, i=3, f=2*3=6,i=4, f=6
+3rd time through, 2 is < 4
+print it out, 2
+then increment it, making it 3
+
+f=6, i=4, f=6*4=24 f=24
+fourth time through, 3 < 4
+*/
+
+// == factorial output ==
+/*
+f is 1
+i is 1
+f times i equals 1
+f is 1
+i is 2
+f times i equals 2
+f is 2
+i is 3
+f times i equals 6
+f is 6
+i is 4
+f times i equals 24
+The factorial of 4 is 24
+*/
